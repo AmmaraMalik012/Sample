@@ -1,0 +1,2257 @@
+    body {
+        margin: 0;
+        border: 0;
+        font-family: 'Roboto';
+        overflow: scroll;
+        color: #fff;
+    }
+    
+    #First {
+        background-color: #206040;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #Inner_First {
+        /*     background-color: violet; */
+        width: 85%;
+        display: grid;
+        grid-template-columns: 75% 25%;
+    }
+    
+    #Second {
+        /*     background-color: blue; */
+        display: flex;
+        height: 53px;
+        align-items: center;
+        justify-content: start;
+        left: -20px;
+        position: relative;
+    }
+    
+    #Third {
+        /*     background-color: purple; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #Nav_List ul {
+        /*     border: none; */
+        color: #fff;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+    }
+    
+    #Search_Input input {
+        float: right;
+        padding: 6px;
+        /*   margin-top: 8px; */
+        /*   margin-right: 16px; */
+        background: #153B30;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+    }
+    
+    .textclr {
+        background-color: green;
+    }
+    
+    #Nav_List li {
+        display: inline-block;
+        float: left;
+        margin-right: 20px;
+    }
+    
+    #Nav_List a {
+        color: #fff;
+        /*         background-color: pink; */
+    }
+    
+    #Nav_List li a {
+        display: block;
+        min-width: 80px;
+        /*     height: 50px; */
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+        background: #206040;
+        text-decoration: none;
+    }
+    
+    #Nav_List li a:hover {
+        background: #30854C;
+    }
+    
+    #Circle_Btn button:hover {
+        cursor: pointer;
+    }
+    /*     
+    #Outer_Wrapper_NavBar {
+        width: 100%;
+        height: 40px;
+        background-color: #206040;
+        display: flex;
+        justify-content: center;
+    } */
+    
+    #Outer_HomePage_Wrapper {
+        background-color: #30854C;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+    
+    #Adidas_Bar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #Inner_Adidas_Bar {
+        width: 80%;
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns: 70% 15% 15%;
+    }
+    
+    hr {
+        margin-top: 30px;
+    }
+    
+    #To_Hide_Bar1 {
+        display: none;
+    }
+    /* Notification Bar Start */
+    
+    #To_Clr {
+        color: #217F40;
+    }
+    
+    #NT_Bar {
+        background-color: #FFF;
+        /*     border: 1px solid black; */
+        box-sizing: border-box;
+        width: 100%;
+        display: grid;
+        font-size: 11px;
+    }
+    
+    #NT_Text {
+        color: black;
+        grid-column: 1/2;
+        /* background-color: yellow; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    #NT_Icon {
+        grid-column: 2/-1;
+        /* background-color: orange; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    #Circle_Btn {
+        background-color: #206040;
+        height: 15px;
+        width: 15px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2px;
+    }
+    
+    #Notification_Button {
+        background: url(./Slicing/menu-close-icon.png);
+        background-repeat: no-repeat;
+        background-size: 60% 60%;
+        background-position: 2.4px;
+        height: 100%;
+        border: none;
+    }
+    /* Slanted Nav Start */
+    
+    .navArea li a {
+        display: flex;
+        justify-content: center;
+        /* position: absolute;
+  float: right; */
+        /*   padding-left: 200px; */
+        /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
+        /* height: 65px; */
+        /* display: block; */
+    }
+    
+    .navArea li {
+        position: relative;
+        /*     float: left; */
+        background: #216141;
+        /*         line-height: 20px; */
+        /*         padding: 10px 5px; */
+        list-style: none;
+        width: 16.5%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*     margin-right: 10px; */
+        left: -2%;
+    }
+    
+    .navArea li a {
+        /* display: block; */
+        text-decoration: none;
+        color: white;
+        /* text-transform: uppercase; */
+    }
+    
+    .Slanty_Nav:hover:before {
+        border-bottom: 50px solid #30854C;
+    }
+    
+    .Slanty_Nav:hover:after {
+        border-top: 50px solid #30854C;
+    }
+    
+    .Slanty_Nav::before {
+        content: '';
+        position: absolute;
+        border-left: 10px solid transparent;
+        border-right: 0px solid transparent;
+        border-bottom: 51px solid #206040;
+    }
+    
+    .Slanty_Nav::after {
+        content: '';
+        position: absolute;
+        border-left: 0px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 50px solid #206040;
+    }
+    
+    .C1::before {
+        left: 30px;
+        top: 2px;
+    }
+    
+    .C2::before {
+        left: 130px;
+        top: 2px;
+    }
+    
+    .C3::before {
+        left: 230px;
+        top: 2px;
+    }
+    
+    .C4::before {
+        left: 330px;
+        top: 2px;
+    }
+    
+    .C5::before {
+        left: 430px;
+        top: 2px;
+    }
+    
+    .C1::after {
+        left: 120px;
+    }
+    
+    .C2::after {
+        left: 220px;
+    }
+    
+    .C3::after {
+        left: 320px;
+    }
+    
+    .C4::after {
+        left: 420px;
+    }
+    
+    .C5::after {
+        left: 520px;
+    }
+    /*     .navArea li:hover {
+        background-color: red;
+    } */
+    /*     .navArea a:hover:after {
+        border-top: 40px solid red;
+    } */
+    /*     
+    .navArea a:hover:before {
+        border-bottom: 40.7px solid red;
+    }
+     */
+    
+    .MemAdd a {
+        /*         padding: 0; */
+        text-decoration: none;
+        list-style: none;
+        color: white;
+    }
+    /* .MemAdd li{
+    line-height: 150px;
+} */
+    
+    .Membership::before {
+        /*     left: 66.48%; */
+        /*     right: 9.5px; */
+        /*         right: 7%; */
+        right: 16.3%;
+    }
+    
+    .Membership::after {
+        /*     left: 76.7%; */
+        /*     left: 9px; */
+        left: 16.7%;
+        /*         left: 9px; */
+    }
+    
+    .Address::before {
+        /*     left: 78.46%; */
+        /*         right: 24px; */
+        right: 25.3%;
+    }
+    
+    .Address::after {
+        /*     left: 88.7%; */
+        /*     left: 19px; */
+        left: 25.6%;
+    }
+    
+    .MemAdd {
+        grid-column: 2/-1;
+        /*     grid-column: 2/-1;
+    grid-row: 1/-1; */
+        /*     display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px; */
+        /*     background-color: #1b4135; */
+        /*     width: 200%; */
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 45% 45%;
+        justify-content: center;
+        ;
+        /*     justify-content: center; */
+        /*     align-items: center; */
+        /* background-color: green; */
+        /*     height: 57px; */
+        /* float: left; */
+        /*     display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center; */
+    }
+    /* 
+.MemAdd_Wrapper li a {
+    text-decoration: none;
+    color: white;
+    
+} */
+    /* 
+.MemAdd_Wrapper li {
+    list-style: none;
+    display: flex;
+} */
+    
+    .Address {
+        background-color: #206040;
+    }
+    
+    .Membership {
+        background-color: #30854C;
+        /*     float: left;
+    width: 45%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    }
+    
+    .Membership,
+    .Address {
+        align-items: center;
+        margin: 10px 6px;
+        display: flex;
+        justify-content: center;
+        /*     padding: 0 15px; */
+    }
+    
+    .Membership::after {
+        content: '';
+        position: relative;
+        border-right: 9px solid transparent;
+        border-left: 0;
+        border-top: 38px solid #30854C;
+    }
+    
+    .Address::after {
+        content: '';
+        position: relative;
+        border-right: 9px solid transparent;
+        border-left: 0;
+        border-top: 38px solid #206040;
+    }
+    
+    .Membership::before {
+        content: '';
+        position: relative;
+        border-left: 9px solid transparent;
+        border-right: 0;
+        border-bottom: 38px solid #30854C;
+    }
+    
+    .Address::before {
+        content: '';
+        position: relative;
+        border-left: 9px solid transparent;
+        border-right: 0;
+        border-bottom: 38px solid #206040;
+    }
+    
+    .navArea li:hover {
+        background-color: #30854C;
+    }
+    
+    .navArea a:hover:after {
+        border-top: 40px solid #30854C;
+    }
+    
+    .navArea a:hover:before {
+        border-bottom: 40.7px solid #30854C;
+    }
+    /* Responsive NavBar Fourth Try Lol Start */
+    
+    #Outer_Responsive_Nav_Wrapper {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        grid-template-columns: 1fr;
+        background-color: pink;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    #Responsive_Nav_Wrapper {
+        /*         height: 20px; */
+        grid-column: 1/-1;
+        width: 80%;
+        background-color: navy;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 70% 30%;
+        /* align-items: center; */
+        /* align-content: center; */
+        /* grid-template-rows: 70px; */
+        ;
+    }
+    /*     #Nav_Wrapper {
+        background-color: pink;
+        grid-column: 1/2;
+        grid-row: 1;
+    } */
+    
+    #Responsive_Nav_Links {
+        padding-left: 15px;
+        /*         grid-column: 1/2; */
+        /*         grid-row: 1; */
+        background-color: #206040;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80%;
+        font-size: 14px;
+        height: 0;
+    }
+    
+    #Responsive_Nav_Icon {
+        background-color: mediumaquamarine;
+        display: none;
+    }
+    
+    #Search_Icon {
+        display: flex;
+        width: 80%;
+        background-image: url(./Slicing//search-icon.png);
+        height: 34px;
+        position: relative;
+        top: -2.5px;
+        float: left;
+        border: none;
+        background-color: #153B30;
+        background-repeat: no-repeat;
+        background-position: 10px;
+    }
+    
+    #Search_Icon:hover {
+        cursor: pointer;
+    }
+    
+    #SearchBar input[type="text"],
+    textarea {
+        font-size: 16px;
+        border: none;
+        float: right;
+        width: 75%;
+        margin-top: 10px;
+        /*     box-sizing: border-box; */
+        background-color: #153B30;
+        color: #fff;
+    }
+    /* 
+#SearchBar button:hover {
+    height: 10px;
+    ;
+    background: #0b7dda;
+} */
+    
+    #SearchBar {
+        /*         background-color: red; */
+        /*     grid-row: 1; */
+        grid-column: 2/-1;
+        display: grid;
+        grid-template-columns: 80% 15%;
+        /*         height: 100%; */
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: 35px;
+    }
+    
+    #Search_Button {
+        /*     background-image: url(./Slicing//search-icon.png);
+    background-repeat: no-repeat;
+    background-size: 100%; */
+    }
+    
+    #wrapper {
+        /*     border: 1px solid black; */
+        box-sizing: border-box;
+        background-color: #153B30;
+        display: grid;
+        justify-items: center;
+    }
+    
+    #Logo_Bar {
+        background-color: red;
+        /*     width: 100%;
+    display: grid;
+    grid-template-columns: 65% 35%; */
+    }
+    
+    #Logo_Name {
+        /* background-color: orange; */
+        padding: 10px 0 10px 16px;
+        /*     grid-row: 1/-1; */
+        grid-column: 1/2;
+        /*     font-size: 26px; */
+        box-sizing: border-box;
+    }
+    /* 
+#Two_buttons {
+    background-color: peachpuff;
+    align-items: center;
+}
+
+#Membership_Btn {
+    justify-self: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 0;
+}
+
+#Account_Btn {
+    justify-self: center;
+    background-color: pink;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 0;
+} */
+    
+    #Responsive_Nav_Icon {
+        /*     grid-row: 2/-1; */
+        background-color: #153B30;
+        /*     grid-column: 1/-1; */
+    }
+    
+    #Toggle_Nav_Icon {
+        background: url(./Slicing/burger-icon.png);
+        width: 60%;
+        height: 70%;
+        /*     background-size: 90%; */
+        background-repeat: no-repeat;
+        border: none;
+        background-position: 4px;
+    }
+    
+    .navArea {
+        /* position: absolute;
+  float: right; */
+        /*   padding-left: 200px; */
+        /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
+        /* height: 65px; */
+        /* display: block; */
+        /*   list-style: none; */
+    }
+    
+    .navArea li {
+        /*         padding: px 0; */
+        /*   position: relative;
+  float: left; */
+        /*   background: #216141; */
+        /*   line-height: 20px; */
+        /*   padding: 10px 14px; */
+    }
+    
+    .navArea li a {
+        /* display: block; */
+        /*   text-decoration: none;
+  color: white; */
+        /* text-transform: uppercase; */
+    }
+    /* .textone::before {
+  content: '';
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 40px solid #388953;
+  left: -20px;
+  top: 0;
+}
+.textone::after {
+  content: '';
+  position: absolute;
+  border-left: 0px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 40px solid #388953;
+  right: -19px;
+  top: 0;
+  width: 0;
+  height: 0;
+} */
+    
+    .texttwo::before {
+        content: '';
+        position: absolute;
+        border-left: 20px solid transparent;
+        border-right: 0px solid transparent;
+        border-bottom: 40px solid #206040;
+        left: -20px;
+        top: 0;
+    }
+    
+    .texttwo::after {
+        content: '';
+        position: absolute;
+        border-left: 0px solid transparent;
+        border-right: 19px solid transparent;
+        border-top: 40px solid #206040;
+        right: -18px;
+        top: 0;
+        width: 0;
+        height: 0;
+    }
+    
+    .MemAdd li a {
+        /*     padding: 0 30px; */
+    }
+    
+    #Nav_Bar {
+        /*     display: grid;
+    align-items: center;
+    background-color: purple;
+    width: 80%; */
+        /*     display: grid;
+    grid-template-columns: 71% 27%; */
+    }
+    
+    #myTopnav {
+        grid-column: 1/2;
+    }
+    
+    .SearchBar {
+        grid-column: 2/-1;
+    }
+    
+    #Search_Btn {}
+    /*     #myTopnav a {
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+    } */
+    /* #To_Hide_Bar2{
+    display: inline;
+    grid-row: 2/-1;
+} */
+    /* #List_Items {
+    background-color: palevioletred;
+    align-self: center;
+    display: grid;
+    padding: 0 10px;
+    box-sizing: border-box;
+} */
+    
+    #Inner_Wrapper_NavBar {
+        width: 80%;
+        display: grid;
+        background-color: #0C3428;
+        grid-template-columns: 70% 15% 15%;
+        /*     align-content: center; */
+        /*     grid-column-gap: 10px; */
+        /*     box-sizing: border-box; */
+    }
+    
+    #Logo {
+        /*     background-color: purple; */
+        /*     background: url(./Slicing/reebok-logo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-left: 30px solid maroon;
+    border-bottom: 76px solid transparent; */
+    }
+    
+    #HomePage {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    
+    #Logo {
+        /*     background: url(./Slicing/reebok-logo.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: 40px 50px;
+    box-sizing: border-box; */
+        /*     display: flex;
+    justify-content: center; */
+        /*     align-items: center; */
+        /*     grid-column: 2/4; */
+    }
+    
+    #Logo_Text {
+        /*     z-index: 1; */
+        grid-column: 2/-1;
+        grid-row: 1/2;
+        /*     display: grid;
+    align-items: center;
+    justify-content: center; */
+        background-color: transparent;
+        font-size: 14px;
+        font-weight: bold;
+        color: green;
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-self: start;
+        z-index: 1;
+        /*          border-left: 16px solid red;
+                border-bottom: 10px solid transparent;  */
+        /*         height: 10px; */
+        /*         border-left: 16px solid #30854C;
+        border-bottom: 86px solid transparent; */
+        /*     align-items: center; */
+        /*     height: 30px;
+    background-color: blue;
+    border-left: 25px solid purple;
+    border-bottom: 90px solid white; */
+    }
+    
+    #Logo_Wrapper {
+        background: url(./Slicing/reebok-logo.png);
+        background-repeat: no-repeat;
+        background-size: 70%;
+        background-position: 40px 32px;
+        box-sizing: border-box;
+        background-color: #fff;
+        grid-row: 1/2;
+        grid-column: 2/-1;
+        display: grid;
+        /*     grid-template-rows: 20px 20px; */
+        border-left: 20px solid #30854C;
+        border-bottom: 86px solid transparent;
+        /*     background-position: -10px; */
+        box-sizing: border-box;
+    }
+    /* Nav Bar Done */
+    /* Home Page Bar start */
+    
+    #HomePage_Wrapper {
+        background-color: #fff;
+        width: 90%;
+        /*         justify-content: end; */
+        display: grid;
+        grid-template-columns: 60% 25%;
+        /*      background-color: purple; */
+        /*     display: grid; */
+        /*     grid-template-columns: 80% 20%; */
+    }
+    
+    #HomePage {
+        display: grid;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 20px 15px;
+        background-color: #30854C;
+        /*     padding: 15px; */
+    }
+    /* Home Page Bar Done */
+    /* Image Slider Section Start */
+    
+    #Slider_Section_Background {
+        /*         width: 100%; */
+        background-image: url(./Slicing/hero-bg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+    }
+    
+    #Slider_Section {
+        color: #fff;
+        background-color: rgba(21, 59, 48, 0.8);
+        display: grid;
+        grid-template-columns: 10% repeat(2, 1fr) 10%;
+        grid-template-rows: 350px 70px;
+    }
+    
+    .Thumbnail_Sliding_Icons {
+        grid-column: 1/-1;
+        /* background-color: red; */
+    }
+    
+    #Slider_Text {
+        /* background-color: silver; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 53px;
+    }
+    
+    #Slider_Text p {
+        font-size: 13px;
+        /*     font-size: 1.25vw; */
+    }
+    /* #Slider_Text h1{
+    font-size: 2.5vw;
+} */
+    
+    #Slider_Container {
+        float: right;
+        /* background-color: skyblue; */
+        margin-left: 80px;
+        padding: 30px 40px 10px 10px;
+    }
+    
+    #Slider_Images {
+        height: 100%;
+        width: 80%;
+        /* background-color: chartreuse; */
+        background-image: url(./Slicing/video-thumbnail-img.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #Slider_Play_Button {
+        background-color: rgb(1, 44, 31);
+        padding-left: 5px;
+        width: 25%;
+        height: 25%;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.85;
+    }
+    
+    .Slider_Arrow {
+        display: flex;
+        align-items: center;
+    }
+    
+    #Slider_Right_Arrow {
+        padding-left: 55px;
+    }
+    
+    #Slider_Left_Arrow {
+        padding-left: 35px;
+    }
+    
+    .dot {
+        cursor: pointer;
+        height: 5px;
+        width: 15px;
+        background-color: #bbb;
+        display: inline-block;
+        margin: 4px;
+        transition: background-color 0.6s ease;
+        /*   position: relative; */
+    }
+    
+    .Thumbnail_Sliding_Icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Image Slider Section Done */
+    /* Thumbnail Slider Section Start */
+    
+    #Card_Wrapper {
+        overflow-x: hidden;
+        background-color: #153B30;
+        width: 100%;
+        display: grid;
+        border-bottom: 50px solid #153B30;
+    }
+    
+    #Card_Section_One {
+        background-color: #153B30;
+        display: grid;
+        grid-template-rows: 150px 40px 1fr;
+        padding-right: 15px;
+    }
+    
+    #Inner_Card_Wrapper {
+        background-color: #153B30;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 76% 24%;
+        justify-self: center;
+        padding-top: 50px;
+    }
+    /* 
+#Thumbnail_card {
+    background-color: grey;
+    display: grid;
+    grid-template-columns: 3% repeat(4, 1fr) 3%;
+   
+    grid-gap: 20px;
+}
+
+#Thumbnail_Sliding_Icons {
+   
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Thumbnail_Slider_Arrow {
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Thumbnail_Slider_Image img {
+    box-sizing: border-box;
+    background-color: mediumturquoise;
+    width: 100%;
+    height: 100%;
+    border: 5px solid green;
+} */
+    
+    hr {
+        border: 1px solid white;
+    }
+    /* Thumbnail Slider Section Done */
+    /* Read More/Post card Section Start */
+    
+    #ReadMore_Card {
+        box-sizing: border-box;
+        background-color: #153B30;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 24px;
+        padding: 30px 0;
+        font-size: 12px;
+    }
+    
+    .Post_Card {
+        background-color: #2C8449;
+        display: grid;
+        grid-template-rows: auto 130px auto;
+    }
+    
+    .PostCard_Image {
+        background-color: greenyellow;
+    }
+    
+    .PostCard_Image img {
+        background-color: darkgrey;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .Post_Card_Text {
+        box-sizing: border-box;
+        padding: 5px 7px 20px;
+    }
+    
+    .Post_Card_Text h2,
+    .Card_Image_Text h2 {
+        font-size: 14px;
+    }
+    
+    .Post_Read_More {
+        background-color: #206040;
+        padding: 10px 0;
+        font-weight: bold;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+    }
+    /* Read More/Post card Section Done */
+    /* ZigZag Image And Text Section Start */
+    
+    #Card_Image_One {
+        /*     background-color: red; */
+        display: grid;
+        grid-template-columns: 60% 40%;
+        /*     grid-template-rows: 200px; */
+        align-items: center;
+        background-image: url(./Slicing/zig-zag-img-1.png);
+        background-repeat: no-repeat;
+        background-size: 60% 100%;
+        /*     background-position: -0px; */
+    }
+    
+    #Card_Image_One_Left {
+        height: 100%;
+        /*     background-color: purple; */
+        border-right: 50px solid #2C8449;
+        border-top: 177px solid transparent;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    /* #Card_Image_One_Left img,
+#Card_Image_Two_Right img {
+    width: 100%;
+} */
+    
+    .Card_Image_Text {
+        background-color: #2C8449;
+        box-sizing: border-box;
+        padding: 40px 25px;
+        font-size: 12px;
+    }
+    
+    #Card_Image_Two {
+        background-color: peru;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        align-items: center;
+        background-image: url(./Slicing/zig-zag-img-2.png);
+        background-repeat: no-repeat;
+        background-size: 70% 100%;
+        background-position: 250px;
+    }
+    
+    .Image_Two_Color {
+        background-color: #216141;
+    }
+    
+    #Card_Image_Two_Right {
+        /*     background-image: url(./Slicing/zig-zag-img-2.png); */
+        height: 100%;
+        /*     background-color: orangered; */
+        border-left: 50px solid #216141;
+        border-top: 177px solid transparent;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    /* ZigZag Image And Text Section Done */
+    /* Second Card Section Start */
+    
+    #Card_Section_Two {
+        background-color: #153B30;
+    }
+    
+    #Event_Card {
+        /* background-color: #238041; */
+        display: grid;
+        grid-template-rows: 30px repeat(4, 50px);
+        /*     justify-content: center; */
+        /*     align-items: center; */
+    }
+    
+    #Event {
+        color: #fff;
+        background-color: #206040;
+        display: flex;
+        /*     justify-content: center; */
+        padding-left: 10px;
+        align-items: center;
+    }
+    
+    .Event_Option {
+        display: grid;
+        grid-template-columns: 43px 1fr;
+        grid-template-rows: 43px;
+        padding-left: 5px;
+    }
+    
+    .Event_Option a {
+        color: #fff;
+        padding-left: 5px;
+    }
+    
+    .Event_Option_Numbers {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: green;
+        margin: 5px;
+    }
+    
+    .Event_Option p {
+        margin: 5px;
+        font-size: 13px;
+        /*     font-size: 1.6vw; */
+    }
+    
+    .Event_Option a:link {
+        /* font-weight: bold; */
+        font-size: 13px;
+        text-decoration: underline;
+        text-underline-position: under;
+    }
+    
+    #Event_Link_Wrapper {
+        background-color: #2C8449;
+        color: #fff;
+        ;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+    /* #Event_Option_One {
+        background-color: gold;
+    }
+    
+    #Event_Option_Two {
+        background-color: goldenrod;
+    }
+    
+    #Event_Option_Three {
+        background-color: gray;
+    }
+    
+    #Event_Options_Four {
+        background-color: green;
+    } */
+    /* Second Card Section Done */
+    /* Form Section Start */
+    
+    #Form {
+        background-color: #216141;
+        width: 100%;
+        display: grid;
+    }
+    
+    #Form_Wrapper {
+        overflow: hidden;
+        /* background-color: green; */
+        box-sizing: border-box;
+        width: 41.5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        justify-self: center;
+    }
+    
+    select {
+        color: grey;
+    }
+    
+    #Name input,
+    #Email input,
+    select {
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        padding: 5px;
+        width: 100%;
+    }
+    
+    input,
+    select {
+        box-sizing: border-box;
+        margin: 5px 0 10px 0;
+    }
+    
+    #Radio_Form {
+        /*         padding-bottom: 10px; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+    
+    .container {
+        position: relative;
+        padding: 0 15px 0 25px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        user-select: none;
+    }
+    /* Hide the browser's default radio button */
+    
+    .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    /* Create a custom radio button */
+    
+    .checkmark {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        height: 18px;
+        width: 18px;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+    /* On mouse-over, add a grey background color */
+    
+    .container:hover input~.checkmark {
+        background-color: white;
+    }
+    /* When the radio button is checked, add a blue background */
+    
+    .container input:checked~.checkmark {
+        background-color: white;
+    }
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    /* Show the indicator (dot/circle) when checked */
+    
+    .container input:checked~.checkmark:after {
+        display: block;
+    }
+    /* Style the indicator (dot/circle) */
+    
+    .container .checkmark:after {
+        top: 4.5px;
+        left: 3.5px;
+        /*         right: 2px; */
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #216141;
+    }
+    
+    textarea {
+        color: grey;
+        background-color: #fff;
+        box-sizing: border-box;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        overflow: auto;
+        outline: none;
+        box-shadow: none;
+        width: 100%;
+    }
+    
+    #Form_Heading {
+        background-color: #216141;
+        grid-column: 1/-1;
+        display: flex;
+        justify-content: center;
+        font-size: 28px;
+        padding: 15px;
+    }
+    
+    #Name {
+        /* background-color: magenta; */
+        grid-column: 1/2;
+    }
+    
+    #Email {
+        /* background-color: mediumblue; */
+        grid-column: 2/-1;
+    }
+    
+    #Country {
+        /* background-color: khaki; */
+        grid-column: 1/2;
+    }
+    
+    #State {
+        /* background-color: paleturquoise; */
+        grid-column: 2/-1;
+    }
+    
+    #Gender {
+        /* background-color: lawngreen; */
+        grid-column: 1/-1;
+    }
+    
+    #Submit_Btn {
+        /* background-color: tomato; */
+        grid-column: 1/-1;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #Submit_Btn button {
+        color: white;
+        background-color: #153B30;
+        border: none;
+        padding: 5px;
+        width: 30%;
+        margin: 20px 0 30px 0;
+    }
+    
+    #Country_Message {
+        /* background-color: teal; */
+        grid-column: 1/-1;
+    }
+    /* Form Section Done */
+    /* Footer Section Start */
+    
+    #Footer_Wrapper {
+        background-color: #153B30;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+    
+    #Footer_Section_Three {
+        font-size: 13px;
+        padding-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        /*         width: 60%; */
+        /*         justify-content: center; */
+    }
+    /* .Footer{
+    display: flex;
+    justify-content: center;
+} */
+    
+    #Footer {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+    }
+    
+    #Footer_Section_Two {
+        display: grid;
+        grid-template-columns: repeat(4, 20px);
+        justify-content: center;
+        padding-bottom: 15px;
+        grid-gap: 10px;
+        width: 50%;
+        /*! left: -25%; */
+    }
+    
+    .Twitter_Log {
+        padding-top: 1.5px;
+    }
+    
+    .For_Padding {
+        font-size: 12px;
+        padding: 0 3px;
+    }
+    /* #Footer {
+        width: 40%
+    } */
+    
+    #Footer_Section_One a {
+        color: #fff;
+        /* outline: none; */
+        text-decoration: none;
+    }
+    
+    #Footer_Section_One {
+        /*     width: 100%;
+    display: grid;
+    justify-self: center;
+    grid-template-columns: repeat(5,1fr); */
+        font-size: 14px;
+        padding: 10px 0 15px 0;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto auto;
+        /*     justify-items: center; */
+        /*     grid-template-columns: auto 5px auto 5px auto 5px auto 5px auto; */
+        grid-gap: 3px;
+        width: 100%;
+        /* background-color: pink; */
+    }
+    
+    #Footer_Line_One {
+        display: grid;
+        grid-template-columns: auto 5px auto 5px auto;
+        grid-gap: 5px;
+    }
+    
+    #Footer_Line_Two {
+        /*         left: -55%; */
+        display: grid;
+        grid-template-columns: 5px auto 5px auto;
+        grid-gap: 5px;
+        /*         justify-self: center; */
+    }
+    
+    .Footer_Content {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #Footer_Section_Two {
+        /* background-color: gold; */
+    }
+    
+    #Footer_Section_Three {
+        /* justify-self: center; */
+        /* background-color: mediumseagreen; */
+    }
+    
+    #line {
+        border: 1px solid white;
+        height: 10px;
+        transform: rotate(15deg);
+        margin: 4px 10px;
+    }
+    /* .Twitter_Log{
+    padding: 22px;
+} */
+    
+    .Slash {
+        margin-top: 3px;
+    }
+    /* #Customize_Br{
+    margin: 100px;
+} */
+    /* Footer Section Done */
+    /* Slick Slider for Thumbnail Images Start */
+    /* Slick Slider for Thumbnail Images Done */
+    
+    @media(max-width:1200px) {
+        /*         .Image_Icon{
+            padding: 0 13px;
+        } */
+        /*         .For_Padding{
+            padding-right: 5px;
+        } */
+        .container .checkmark:after {
+            top: 4.5px;
+            left: 4px;
+        }
+        .Slash {
+            margin-top: 2px;
+        }
+        .To_Hide {
+            display: none;
+        }
+        #NT_Text {
+            /* background-color: violet; */
+        }
+        #NT_Bar {
+            grid-template-columns: 90% 10%;
+        }
+    }
+    /* @media(max-width:1050px) {} */
+    
+    @media(max-width:768px)
+    /*and (max-width:1199px)*/
+    /* Notification Bar Start */
+    
+    {
+        #Notification_Button {
+            background-position: 1.5px;
+        }
+        .C1::before {
+            bottom: 2px;
+        }
+        .C2::before {
+            bottom: 2px;
+            left: 140px;
+        }
+        .C3::before {
+            bottom: 2px;
+            left: 248px;
+        }
+        .C4::before {
+            bottom: 2px;
+            left: 351px;
+        }
+        .C5::before {
+            bottom: 2px;
+            left: 418px;
+        }
+        .C1::after {
+            bottom: 2px;
+            left: 135px;
+        }
+        .C2::after {
+            bottom: 2px;
+            left: 243px;
+        }
+        .C3::after {
+            bottom: 2px;
+            left: 347px;
+        }
+        .C4::after {
+            bottom: 2px;
+            left: 414px;
+        }
+        .C5::after {
+            bottom: 2px;
+            left: 508px;
+        }
+        .Slanty_Nav::before {
+            border-bottom: 56px solid #206040;
+        }
+        .Slanty_Nav::after {
+            border-top: 56px solid #206040;
+        }
+        .Slanty_Nav:hover:before {
+            border-bottom: 57px solid #30854C;
+        }
+        .Slanty_Nav:hover:after {
+            border-top: 56px solid #30854C;
+        }
+        #Inner_First {
+            width: 100%;
+            grid-template-columns: 68% 32%;
+        }
+        #Second {
+            height: 60px;
+        }
+        #Nav_List li {
+            margin-right: 10px;
+        }
+        #Nav_List li a {
+            margin-right: 4px;
+            min-width: 20px;
+            line-height: 37px;
+        }
+        #Inner_Adidas_Bar {
+            width: 100%;
+        }
+        hr {
+            margin: 5px;
+        }
+        #Form {
+            border-top: 50px;
+        }
+        .container .checkmark:after {
+            top: 4px;
+            left: 4px;
+        }
+        .Slash {
+            margin-top: 12px;
+        }
+        .Footer_Content {
+            font-size: 13px;
+        }
+        .Membership::before {
+            left: -0.1%;
+            /*     right: 9.5px; */
+            /*                     right: 7%; */
+        }
+        .Membership::after {
+            /*     left: 76.7%; */
+            /*     left: 9px; */
+            /*                 left: 7.28%; */
+            left: 0.5%;
+            /*             right: -100px; */
+        }
+        .Address::before {
+            /*     left: 78.46%; */
+            right: 11.5%;
+            /*             right: 15.5%; */
+        }
+        .Address::after {
+            /*     left: 88.7%; */
+            /*     left: 19px; */
+            left: 11.7%;
+        }
+        .Membership,
+        .Address {
+            align-items: center;
+            margin: 9px 0;
+            display: flex;
+            justify-content: center;
+            width: 85%;
+            /*                 padding: 0 0; */
+        }
+        .MemAdd {
+            /*                     justify-content: start; */
+            grid-column: 2/-1;
+            grid-template-columns: 53% 53%;
+            grid-template-rows: 96%;
+            grid-gap: 0;
+            justify-content: start;
+            margin-right: 7px;
+            line-height: 10px;
+        }
+        .navArea li a {
+            padding: 0;
+        }
+        .navArea li {
+            width: 16%;
+            font-size: 12px;
+            /*         height: 40px; */
+        }
+        /*     body{
+        font-size: 2vw;
+    } */
+        /*     Responsive NavBar Fourth Try Start */
+        #Inner_Wrapper_NavBar {
+            width: 100%;
+        }
+        #Responsive_Nav_Links {
+            width: 90%;
+            /*         font-size: 14px; */
+        }
+        /*     Responsive NavBar Fourth Try Done */
+        #myTopnav a {
+            padding: 10px;
+            font-size: 12px;
+        }
+        #NT_Icon {
+            padding: 15px;
+        }
+        #NT_Text {
+            /* background-color: blueviolet; */
+            padding: 15px;
+        }
+        #NT_Bar {
+            grid-template-columns: 90% 10%;
+            font-size: 12px;
+        }
+        a {
+            padding: 10px;
+        }
+        /* Notification Bar Done */
+        /* Inner Section Start */
+        #Logo_Bar,
+        #Nav_Bar,
+        #HomePage_Wrapper,
+        #Inner_Card_Wrapper {
+            width: 100%;
+        }
+        #Form_Wrapper {
+            width: 65%;
+        }
+        #Footer {
+            width: 55%;
+        }
+        #Footer_Wrapper {
+            font-size: 12px;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .Slider_Arrow {
+            display: none;
+        }
+        #Slider_Container {
+            padding: 20px 0 0 40px;
+            margin-left: 25px;
+        }
+        #List_Items {
+            padding-left: 9px;
+        }
+        #line {
+            margin-top: 2.5px;
+            height: 7.5px;
+        }
+        #HomePage_Wrapper {
+            grid-template-columns: 65% 30%;
+        }
+        #Inner_Card_Wrapper {
+            grid-template-columns: 70% 30%;
+        }
+        #Thumbnail_card {
+            grid-template-columns: repeat(3, 1fr);
+            padding: 0 15px;
+        }
+        .To_Hide_Tab_View,
+        .Thumbnail_Slider_Arrow {
+            display: none;
+        }
+        /*         #Slider_Section_Background{
+            display: flex;
+            justify-content: center;
+        } */
+        #Slider_Section {
+            justify-content: center;
+            grid-template-rows: 300px 70px;
+        }
+        #Slider_Images {
+            margin: 20px;
+            width: 75%;
+            height: 90%;
+        }
+        #Slider_Text {
+            font-size: 12px;
+            padding: 16px;
+        }
+        #Slider_Section {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        #ReadMore_Card {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        #Card_Image_One {
+            /*     background-color: red; */
+            /*         display: grid; */
+            grid-template-columns: 50% 50%;
+            /*        align-items: center;
+        background-image: url(./Slicing/zig-zag-img-1.png);
+        background-repeat: no-repeat; */
+            background-size: 70% 100%;
+            /*     background-position: -0px; */
+        }
+        /*         .Hide_Img{
+            display: none;
+        } */
+        #Card_Image_One_Left {
+            border-top: 192px solid transparent;
+            /*         height: 100%; */
+            /*     background-color: purple; */
+            /*         border-right: 50px solid blueviolet;
+        border-top: 192px solid transparent;
+        box-sizing: border-box;
+        overflow: hidden; */
+        }
+        /* #Card_Image_One_Left img,
+    #Card_Image_Two_Right img {
+        width: 100%;
+    } */
+        .Card_Image_Text {
+            /*         background-color: blueviolet;
+        box-sizing: border-box;
+        padding: 40px 25px;
+        font-size: 12px; */
+        }
+        #Card_Image_Two {
+            /*         background-color: peru;
+        display: grid; */
+            grid-template-columns: 50% 50%;
+            /*         align-items: center;
+        background-image: url(./Slicing/zig-zag-img-2.png);
+        background-repeat: no-repeat;
+        background-size: 60% 100%;
+        background-position: 250px; */
+        }
+        #Card_Image_Two_Right {
+            /*     background-image: url(./Slicing/zig-zag-img-2.png); */
+            height: 100%;
+            /*     background-color: orangered; */
+            border-left: 50px solid #216141;
+            border-top: 192px solid transparent;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        #Card_Wrapper {
+            box-sizing: border-box;
+            padding: 0 10px;
+        }
+        #Card_Section_One {
+            padding-right: 20px;
+            grid-template-rows: 150px 10px 1fr;
+        }
+        .For_Padding {
+            padding: 0 7px;
+        }
+        #Footer_Section_One {
+            font-size: 14px;
+            grid-gap: 6px;
+        }
+        #Search_Icon {
+            height: 35px;
+        }
+    }
+    /* Inner Section Done */
+    
+    @media(max-width:369px) {
+        #Search_Icon {
+            height: 34px;
+        }
+        /*      .Slanty_Nav::before {
+        content: '';
+        position: absolute;
+        border-left: 10px solid transparent;
+        border-right: 0px solid transparent;
+        border-bottom: 48px solid #fff;
+    } */
+        #Notification_Button {
+            background-position: 2px;
+        }
+        .Slanty_Nav::after {
+            content: '';
+            position: absolute;
+            border-left: 0px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 57px solid #206040;
+        }
+        .Slanty_Nav:hover:after {
+            border-top: 57px solid #30854C;
+        }
+        .C1::before,
+        .C2::before,
+        .C3::before,
+        .C4::before,
+        .C5::before {
+            display: none;
+        }
+        .C1::after {
+            bottom: 230px;
+            left: 136px;
+        }
+        .C2::after {
+            bottom: 173px;
+            left: 136px;
+        }
+        .C3::after {
+            bottom: 116px;
+            left: 136px;
+        }
+        .C4::after {
+            bottom: 59px;
+            left: 136px;
+        }
+        .C5::after {
+            left: 136px;
+        }
+        #Toggle_Nav_Icon:hover {
+            cursor: pointer;
+        }
+        #First {
+            display: none;
+        }
+        #Inner_First {
+            width: 100%;
+        }
+        #Second {
+            width: 100%;
+            height: 290px;
+            grid-column: 1/-1;
+            justify-content: start;
+            grid-row: 2;
+        }
+        #Third {
+            width: 100%;
+            grid-column: 1/-1;
+            justify-content: center;
+            grid-template-columns: 80% 13%;
+        }
+        #Search_Input input {
+            padding-right: 90px;
+        }
+        #Nav_List li {
+            margin-right: 10px;
+        }
+        #Nav_List li a {
+            min-width: 50px;
+            line-height: 37px;
+            text-align: start;
+        }
+        #Nav_List {
+            display: flex;
+            flex-direction: column;
+            grid-column: 1/-1;
+        }
+        /*         #Outer_Responsive_Nav_Wrapper{
+            height: 100px;
+        }
+        #Responsive_Nav_Wrapper{
+            height: 100px;
+        } */
+        /*         .slick-prev {
+            display: none;
+}
+
+.slick-next {
+    display: none;
+} */
+        /*         
+.slick-prev:before,
+        .slick-next:before {
+            display: none;
+        } */
+        /*         #Nav_Wrapper{
+            grid-column: 1/-1;
+            grid-row: 1/-1;
+            height: 100px;
+        } */
+        /*         #Outer_Wrapper_NavBar{
+            grid-row: 2/3;
+            background-color: grey;
+        } */
+        hr {}
+        #Form {
+            margin-top: 10px;
+        }
+        .Membership::before,
+        .Address::before,
+        .Membership::after,
+        .Address::after {
+            border: none;
+        }
+        .Membership {
+            grid-column: 1/2;
+            margin: 0;
+            width: 100%;
+            /*             float: left; */
+            /*             padding: 0; */
+        }
+        .Address {
+            width: 99%;
+            grid-column: 2/-1;
+            margin: 0;
+            /*             border-left: 5 px solid #fff; */
+            /*             padding: 0; */
+        }
+        .Membership,
+        .Address {
+            display: flex;
+            /*             line-height: 100px; */
+            justify-self: center;
+        }
+        .MemAdd {
+            height: 50px;
+            /*         justify-content: center; */
+            /*         align-content: center; */
+            background-color: white;
+            grid-gap: 1px;
+            box-sizing: border-box;
+            grid-column: 1/-1;
+            margin: 0;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 100%;
+            /*             border-bottom: 1px solid black; */
+            box-shadow: 0px 1px 3px rgba(24, 23, 23, 0.5);
+            z-index: 1;
+        }
+        /*         #Responsive_Nav_Wrapper{
+            grid-column: 1;
+            grid-row: 3;
+        }
+        #SearchBar {
+            background-color: #0C3428;
+            grid-column: 1/-1;
+        }
+        #Search_Text { background-color: #0C3428;
+            margin-left: 10px;
+            width: 85%;
+        }
+        #Search_Icon_Wrapper {
+            width: 10%;
+        } */
+        #Card_Wrapper {
+            border-bottom: 20px solid #153B30;
+        }
+        #Form {
+            margin-top: 0;
+        }
+        .navArea li {
+            /*         align-items: center; */
+            /*             padding: 10px 20px; */
+            /*             line-height: 25px; */
+            list-style: none;
+            width: 27%;
+            /*             height: 27px; */
+            /*             left: 0.4%; */
+            padding-left: 20px;
+            font-size: 14px;
+            justify-content: start;
+        }
+        .navArea li a {}
+        #NT_Text {
+            grid-column: 1/2;
+            background-color: #fff;
+        }
+        #NT_Icon {
+            grid-column: 2/-1;
+        }
+        #NT_Bar {
+            width: 100%;
+            grid-template-columns: 85% 15%;
+            font-size: 12px;
+        }
+        /*     #HomePage_Wrapper {
+        display: none;
+    } */
+        #HomePage_Wrapper {
+            display: none;
+        }
+        #Membership_Btn {
+            grid-column: 1/2;
+        }
+        #Slider_Section {
+            grid-template-columns: 1fr;
+            grid-template-rows: 370px 50px 60px;
+        }
+        #Slider_Container {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        #Slider_Images {
+            width: 70%;
+            height: 70%;
+            margin-top: 40px;
+        }
+        #Slider_Text {
+            grid-row: 2/2;
+            margin-bottom: 15px;
+        }
+        .dot {
+            align-self: start;
+            margin-top: 25px;
+        }
+        #Thumbnail_card {
+            grid-template-columns: 1fr;
+        }
+        .To_Hide_Mob_View {
+            display: none;
+        }
+        #Inner_Card_Wrapper {
+            width: 100%;
+            grid-template-columns: 1fr;
+        }
+        #Card_Section_One {
+            padding-right: 0;
+            grid-template-rows: 1fr 30px;
+            grid-gap: 0;
+        }
+        .Thumbnail_Slider_Image img {
+            border: 10px solid rgba(128, 128, 128, 0.5);
+        }
+        #Card_Wrapper {
+            padding: 0;
+        }
+        .To_Hide {
+            display: inline;
+        }
+        #ReadMore_Card {
+            grid-template-columns: 1fr;
+            padding: 0 15px;
+            grid-gap: 15px;
+        }
+        .Post_Card_Text {
+            padding: 10px;
+        }
+        hr {
+            margin: 15px;
+        }
+        .Thumbnail_Sliding_Icons {
+            align-self: start;
+            margin-top: 20px;
+        }
+        #Card_Image_One {
+            margin: 0 15px;
+            margin-top: 25px;
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px 1fr;
+            background-size: 100% 62.9%;
+        }
+        #Card_Image_One_Left {
+            border: 0;
+        }
+        #Card_Image_Two {
+            margin: 0 15px;
+            margin-top: 25px;
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px 1fr;
+            background: none;
+        }
+        #Card_Image_Two_Right {
+            grid-row: 1/-1;
+            border: 0;
+            background-image: url(./Slicing/zig-zag-img-2.png);
+            background-size: 100% 100%;
+        }
+        .Card_Image_Text {
+            padding: 10px;
+        }
+        .Post_Card {
+            grid-template-rows: repeat(3, auto);
+        }
+        #Event_Card {
+            padding: 20px 15px;
+            margin: 30px 0;
+        }
+        #Form_Wrapper {
+            width: 100%;
+            padding: 15px 15px 0 15px;
+        }
+        #Name,
+        #Email,
+        #Country,
+        #State {
+            grid-column: 1/-1;
+        }
+        #Footer_Wrapper {
+            padding-top: 30px;
+        }
+        #Footer_Section_One {
+            font-size: 14px;
+            justify-items: center;
+            align-items: center;
+            grid-template-columns: auto;
+        }
+        .For_Padding {
+            padding: 3px;
+        }
+        #Footer {
+            width: 85%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #Footer_Line_Two {
+            grid-template-columns: auto 5px auto;
+        }
+        #F6 {
+            display: none;
+        }
+        /*     Responsive NavBar Fourth Try Start */
+        #Responsive_Nav_Links {
+            padding: 15px 0;
+            width: 100%;
+            font-size: 12px;
+            display: flex;
+            flex-direction: column;
+            grid-column: 1/-1;
+        }
+        #Outer_Wrapper_NavBar {
+            /*              display:grid;
+             grid-template-column: 1/-1;
+             grid-template-rows: 100px; */
+        }
+        #Inner_Wrapper_NavBar {}
+        #Nav_Wrapper {
+            /*             grid-column: 1/-1;
+            grid-row: 2; */
+        }
+        #Search_Icon_Wrapper {}
+        #SearchBar {
+            /*             display: flex;
+            justify-content: start;
+            grid-row: 1;
+            grid-column: 1/-1; */
+        }
+        #Responsive_Nav_Icon {
+            display: block;
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-self: end;
+        }
+        #Logo_Name {
+            grid-column: 1/2;
+            padding: 5px 0 5px 10px;
+        }
+        #Responsive_Nav_Icon {
+            grid-column: 2/-1;
+        }
+        #Responsive_Nav_Wrapper {
+            /*             grid-column: 1/-1; */
+            /*             display: none; */
+        }
+        /*         .Hide_Img{
+            display: none;
+        } */
+    }
+    /*     Responsive NavBar Fourth Try Done */
+    
+    .your-class {
+        background-color: #153B30;
+        width: 80%;
+        height: 80%;
+    }
+    
+    .your-class img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #Thumbnail_Images_wrapper {
+        width: 100%;
+        /*! height: 170px; */
+        display: flex;
+        justify-content: center;
+        background-color: #153B30;
+    }
+    
+    .Thumbnail_Images {
+        border: 5px solid rgba(128, 128, 128, 0.5);
+        margin: 0 2px;
+    }
+    /* #NT_Bar */
+    
+    #Footer_Section_Three,
+    .Event_Option_Numbers {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    #HomePage_Wrapper,
+    a,
+    h1,
+    h1,
+    #Form_Heading,
+    label,
+    button,
+    #Event {
+        font-family: 'Oswald', sans-serif;
+    }
+    
+    #NT_Text,
+    p,
+    input. textarea,
+    option {
+        font-family: 'Roboto', sans-serif;
+    }
+    /* font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Oswald', sans-serif;
+
+    font-family: 'Roboto', sans-serif; */
